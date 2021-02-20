@@ -113,6 +113,7 @@ socket.on('allmsg', (msg) => {
 
 socket.on('msgC', (msg) => {
 	conversas.innerHTML += `<div class='dialogo'><h4>${msg.apelido}</h4><p>${msg.mensagem}</p></div>`
+	window.scrollTo(0, document.body.scrollHeight)
 })
 
 function clicar() {
